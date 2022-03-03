@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PackIT.Domain.Exceptions
 {
-    internal class InvalidTemperatureException : PackITException
+    public class InvalidTemperatureException : PackITException
     {
         public InvalidTemperatureException(double value) : base($"Value '{value}' is invalid temperature.")
         {
