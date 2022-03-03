@@ -7,6 +7,5 @@ using System.Threading.Tasks;
 namespace PackIT.Shared.Abstractions.Commands
 {
     public interface ICommand
-    {
-    }
+    { }
 }

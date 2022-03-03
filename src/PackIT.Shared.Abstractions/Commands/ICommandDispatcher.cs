@@ -8,6 +8,6 @@ namespace PackIT.Shared.Abstractions.Commands
 {
     public interface ICommandDispatcher
     {
-        Task DispatchCommandAsync<TCommand>(ICommand command) where TCommand : class, ICommand;
+        Task DispatchCommandAsync<TCommand>(TCommand command) where TCommand : class, ICommand;
     }
 }
