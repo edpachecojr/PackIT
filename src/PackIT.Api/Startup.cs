@@ -5,8 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using PackIT.Application;
-using PackIT.Infrastructure;
-using PackIT.Shared;
 
 namespace PackIT.Api
 {
