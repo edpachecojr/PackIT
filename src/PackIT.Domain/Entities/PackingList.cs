@@ -32,6 +32,9 @@ namespace PackIT.Domain.Entities
             _localization = localization;
         }
 
+        private PackingList()
+        {}
+
         public void AddItem(PackingItem item)
         {
             var alreadyExists = _items.Any(i => i.Name == item.Name);

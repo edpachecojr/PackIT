@@ -20,7 +20,7 @@ namespace PackIT.Domain.Factories
         public PackingList Create(PackingListId id, PackingListName name, Localization localization)
             => new(id, name, localization);
 
-        public PackingList CreateWithDegaultItems(PackingListId id, PackingListName name, TravelDays days, Gender gender, Temperature temperature, Localization localization)
+        public PackingList CreateWithDefaultItems(PackingListId id, PackingListName name, TravelDays days, Gender gender, Temperature temperature, Localization localization)
         {
             var data = new PolicyData(days, gender, temperature, localization);
             var applicablePolicies = _policies.Where(p => p.IsApplicable(data));

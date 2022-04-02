@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PackIT.Domain.Exceptions
 {
-    internal class PackingItemNotFoundException : PackITException
+    internal class PackingItemNotFoundException : PackItException
     {
         public string ItemName { get; }
         public PackingItemNotFoundException(string itemName) : base($"Packing item '{itemName}' was not found.")

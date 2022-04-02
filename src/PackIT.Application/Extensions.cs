@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PackIT.Domain.Factories;
 using PackIT.Domain.Policies;
-using PackIT.Shared.Extensions;
+using PackIT.Shared.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;

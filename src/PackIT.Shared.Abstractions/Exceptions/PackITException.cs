@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PackIT.Shared.Abstractions.Exceptions
 {
-    public abstract class PackITException : Exception
+    public abstract class PackItException : Exception
     {
-        protected PackITException(string message) : base(message)
+        protected PackItException(string message) : base(message)
         { }
     }
 }

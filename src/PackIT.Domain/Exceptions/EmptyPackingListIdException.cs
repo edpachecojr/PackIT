@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PackIT.Domain.Exceptions
 {
-    public class EmptyPackingListIdException : PackITException
+    public class EmptyPackingListIdException : PackItException
     {
         public EmptyPackingListIdException() : base("Packing list ID cannot be empty.")
         { }

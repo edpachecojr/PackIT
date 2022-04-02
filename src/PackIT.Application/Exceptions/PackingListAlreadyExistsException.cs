@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PackIT.Application.Exceptions
 {
-    public class PackingListAlreadyExistsException : PackITException
+    public class PackingListAlreadyExistsException : PackItException
     {
-        public PackingListAlreadyExistsException(string name) : base($"Packing list with nam '{name}' already exists.")
+        public PackingListAlreadyExistsException(string name) : base($"Packing list with name '{name}' already exists.")
         {
             Name = name;
         }

@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PackIT.Shared.Abstractions.Commands;
-using PackIT.Shared.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +7,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PackIT.Shared.Extensions
+namespace PackIT.Shared.Commands
 {
-    public static class ServicesExtensions
+    public static class Extensions
     {
         public static IServiceCollection AddCommands(this IServiceCollection services)
         {

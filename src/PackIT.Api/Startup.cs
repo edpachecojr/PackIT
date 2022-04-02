@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using PackIT.Application;
+using PackIT.Infrastructure;
+using PackIT.Shared;
 
 namespace PackIT.Api
 {
@@ -20,8 +22,9 @@ namespace PackIT.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddShared();
             services.AddApplication();
+            services.AddInfrastructure(Configuration);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -38,6 +41,8 @@ namespace PackIT.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PackIT.Api v1"));
             }
+            app.UseHttpsRedirection();
+            app.UseShared();
 
             app.UseRouting();
 

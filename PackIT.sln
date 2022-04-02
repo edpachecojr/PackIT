@@ -18,9 +18,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIT.Shared.Abstractions"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIT.Shared", "src\PackIT.Shared\PackIT.Shared.csproj", "{80C7A715-17F3-4BB1-BEFF-4A294BC1B011}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Api", "src\PackIT.Api\PackIT.Api.csproj", "{A58889D6-9A19-4BBA-A090-0E0B457BA61E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIT.Api", "src\PackIT.Api\PackIT.Api.csproj", "{A58889D6-9A19-4BBA-A090-0E0B457BA61E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Application", "src\PackIT.Application\PackIT.Application.csproj", "{6A483F0D-FA4B-498D-AE5B-74F27FA90C42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIT.Application", "src\PackIT.Application\PackIT.Application.csproj", "{6A483F0D-FA4B-498D-AE5B-74F27FA90C42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FC61E383-F237-46E9-B338-CF2D821F34C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.UnitTests", "PackIT.UnitTests\PackIT.UnitTests.csproj", "{70E93219-6E80-4C82-95FD-CB327F8EACD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +56,10 @@ Global
 		{6A483F0D-FA4B-498D-AE5B-74F27FA90C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A483F0D-FA4B-498D-AE5B-74F27FA90C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A483F0D-FA4B-498D-AE5B-74F27FA90C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E93219-6E80-4C82-95FD-CB327F8EACD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E93219-6E80-4C82-95FD-CB327F8EACD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E93219-6E80-4C82-95FD-CB327F8EACD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E93219-6E80-4C82-95FD-CB327F8EACD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{80C7A715-17F3-4BB1-BEFF-4A294BC1B011} = {F8E73901-2327-424C-8713-D0181E420264}
 		{A58889D6-9A19-4BBA-A090-0E0B457BA61E} = {F3705ED2-032A-442A-A090-9B2158A94063}
 		{6A483F0D-FA4B-498D-AE5B-74F27FA90C42} = {F3705ED2-032A-442A-A090-9B2158A94063}
+		{70E93219-6E80-4C82-95FD-CB327F8EACD0} = {FC61E383-F237-46E9-B338-CF2D821F34C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD07931F-CE1D-437A-97C5-93373473D82C}
